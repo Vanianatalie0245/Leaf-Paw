@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main_home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <div class="time">
+                <h2>DAY</h2>
+                <span id="countDays"></span>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-container">
+                <button class="myBtn" id="menu-1">
+                    <img src="assets/btn1.png" alt="icon1">
+                </button>
+                <button class="myBtn" id="menu-2">
+                    <img src="assets/btn2.png" alt="icon2">
+                </button>
+                <button class="myBtn" id="menu-3">
+                    <img src="assets/btn3.png" alt="icon3">
+                </button>
+                <button class="myBtn" id="menu-4">
+                    <img src="assets/btn4.png" alt="icon4">
+                </button>
+                <button class="myBtn" id="menu-5">
+                    <img src="assets/btn5.png" alt="icon5">
+                </button>
+            </div>
+
+        </div>
+        <div class="cat">
+            <img id="cat" src="assets/cat-sleeping.png" alt="cat">
+        </div>
+    </div>
+    <div id="overlay" class="overlay">
+        <div class="pop-up2" id="popup-2">
+            <div class="pop-up-container1">
+                <button class="btn2-close" id="button-close1">
+                    <img src="assets/close-btn.png" alt="close-btn">
+                </button>
+                <div class="Date-1-container">
+                    <h2>DATE</h2>
+                    <span id="tommorowDate">15</span>
+                </div>
+            </div>
+            <div class="pop-up-fill">
+                <h2>What do you like to do tomorrow?</h2>
+                <p>Write anything you want, big or small. <br>Even tiny things count. Tomorrow, you can look back, <br>carve new memories and see how far you have come</p>
+            </div>
+            <input type="text" id="planInputLine" class="inputPlan" placeholder=" ">
+            <button id="savePlan" class="submitPlan">Make a Plan!</button>
+        </div>
+
+        <div class="pop-up3" id="popup-3">
+            <div class="container-top-3">
+                <button class="btn3-close" id="button-close3">
+                    <img src="assets/close-btn.png" alt="close-btn">
+                </button>
+                <div class="Date-2-container">
+                    <h2>DATE</h2>
+                    <span id="tommorowDate2">15</span>
+                </div>
+            </div>
+            <div class="content-popup3-a">
+                <h2>How is your day today? <img src="assets/cat-sleeping.png" alt="" class="emoji"></h2>
+                <input type="text" id="daytoday" class="dayToday" placeholder=" ">
+            </div>
+
+            <div class="content-popup3-b">
+                <h2>How do you feel today? <img src="assets/cat-slowly-waking.png" alt="" class="emoji"></h2>
+                <input type="text" id="todayfeel" class="todayFeel" placeholder=" ">
+            </div>
+
+            <div class="content-popup3-c">
+                <h2>Did anything make you smile today? <img src="assets/pet-stretching.png" alt="" class="emoji"></h2>
+                <input type="text" id="smiletoday" class="smileToday" placeholder=" ">
+            </div>
+
+            <div class="content-popup3-d">
+                <h2>What is one small thing you are looking forward to tomorrow? <img src="assets/pet-awake.png" alt="" class="emoji"></h2>
+                <input type="text" id="tommorowplan" class="tomorrowPlan" placeholder=" ">
+            </div>
+
+
+            <button id="saveDiary" class="submitDiary">Record Moments!</button>
+        </div>
+
+        <div class="pop-up4" id="popup-4">
+            <div class="container-top-4">
+                <button class="btn4-close" id="button-close4">
+                    <img src="assets/close-btn.png" alt="close-btn">
+                </button>
+                <div class="Date-3-container">
+                    <h2>DIARY</h2>
+                    <span id="tommorowDate3">15</span>
+                </div>
+            </div>
+            <div class="content-popup4-a"> 
+                <ul id="diaryList"></ul>
+                <div id="diaryDetails"></div>
+            
+            </div>
+        
+        </div>
+    
+    </div>
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./main_home.js"></script>
+</body>
+</html>

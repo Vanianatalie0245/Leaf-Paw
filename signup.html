@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://code.iconify.design/iconify-icon/2.0.0/iconify-icon.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Keyboard&display=swap" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+        </div>
+    
+        <div class="login-form">
+            <div class="page-switch">
+                <a href="#" id="goToSignup">Sign Up</a>
+                <a href="/signup.html" class="active">Sign In</a>
+            </div>
+
+            <form class="sign-in-form" id="sign-in-form-main">
+                <div class="input-group">
+                    <span class="fontisto--email"></span>
+                    <input type="email" id="sign-in-email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <span class="material-symbols--password-rounded"></span>
+                    <input type="password" id="sign-in-password" placeholder="Password" required>
+                </div>
+
+                <button type="submit">Sign In</button>
+            </form>
+        <div id="statusMsg"></div>
+        </div>
+        <div class="other-login">
+            <div class="divider"><span>or</span></div>
+            <div class="social-icons">
+                <span class="mingcute--google-fill"></span>
+                <span class="ic--outline-facebook"></span>
+            </div>
+        </div>
+
+
+    </div>
+    <script type="module" src="./firebase.js"></script>
+    <script type="module" src="./signup-renderer.js"></script>
+</body>
+</html>

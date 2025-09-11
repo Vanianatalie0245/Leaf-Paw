@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+  font-family: "Inter", sans-serif;
+}
+
+.story-container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('assets/story 1.png');
+  background-size: cover;
+  background-position: center;
+  transition: transform 1s ease, background-image 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;   
+  align-items: center;        
+  padding-bottom: 80px;        
+  overflow: hidden;
+}
+
+p {
+  width: 350px;
+  height: 70px;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 12px;
+  margin-bottom: 50px;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
