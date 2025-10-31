@@ -5,7 +5,4 @@ Every day, you can jot down your feelings, plan a small joy for tomorrow, and wa
 
 This app is a **personal project**, made with love, and **not intended for commercial use**.  
 
-## Art & Illustrations
-Illustrations used in this app, including the cat, bonsai, and backgrounds, were created using **AI-assisted tools** and gently edited. 
-
 Thank you for taking a moment to enjoy this little companion. 💛
